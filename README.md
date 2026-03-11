@@ -1,5 +1,5 @@
 <h1 align="center">
-Website Monitor Bot
+🤖 Website Monitor Bot 🤖
 </h1>
 
 ## Project Overview

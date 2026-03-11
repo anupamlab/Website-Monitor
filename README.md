@@ -22,7 +22,7 @@ It can be used to monitor:
 ## Tech Stack
 * **Python** – Main programming language used to build the bot
 * **Playwright** – Headless browser automation for loading dynamic webpages
-* **Requests** – Used for sending messages through the Telegram Bot API
+* **Requests** – Used for sending messages through the Bot API
 * **Bot API** – Sends alert notifications
 * **GitHub Actions** – Automates the script execution on a schedule
 ---
@@ -40,30 +40,30 @@ It can be used to monitor:
 
 ## Bot Workflow
         ┌─────────────────────┐
-        │   Target Website    │
-        │  (BBC News / Jobs)  │
+        │   Target Website        │
+        │  (BBC News / Jobs)      │
         └──────────┬──────────┘
-                   │
-                   ▼
+                     │
+                     ▼
         ┌─────────────────────┐
-        │  Python Monitor Bot │
-        │  (Playwright Script)│
-        └──────────┬──────────┘
+        │  Python Monitor Bot     │
+        │  (Playwright Script).   │
+        └───────── ┬──────────┘
                    │
          Checks for page updates
                    │
                    ▼
         ┌─────────────────────┐
-        │ Compare with Old    │
-        │ Saved Page Content  │
+        │ Compare with Old        │
+        │ Saved Page Content      │
         └──────────┬──────────┘
-                   │
+                     │
           If Change Detected
-                   │
-                   ▼
+                    │
+                    ▼
         ┌─────────────────────┐
-        │      Bot Alert      │
-        │  Notification Sent  │
+        │      Bot Alert          │
+        │  Notification Sent      │
         └─────────────────────┘
 
 ## Example Use Case

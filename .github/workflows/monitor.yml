@@ -1,0 +1,23 @@
+name: Monitor Website
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Install libraries
+        run: pip install requests beautifulsoup4
+
+      - name: Run script
+        run: python sofed_job_alert.py

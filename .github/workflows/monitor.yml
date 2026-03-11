@@ -1,24 +1,23 @@
 name: Website Monitor
 
 on:
-  workflow_dispatch:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
 
 jobs:
-  run-script:
+  run-bot:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
 
-      - name: Install Python
-        uses: actions/setup-python@v4
+      - uses: actions/setup-python@v4
         with:
-          python-version: "3.x"
+          python-version: "3.11"
 
-      - name: Install libraries
-        run: pip install requests beautifulsoup4
+      - run: |
+          pip install playwright requests
+          playwright install
 
-      - name: Run script
-        run: python sofed_job_alert.py
+      - run: python website_updated.py

@@ -58,7 +58,5 @@ Possible improvements for this project:
 * Send detailed update summaries
 * Store change history in a database
 
-
-<h5 align="center">
-This project was developed as part of my learning journey in Python automation and web monitoring. As a learning assistant to understand concepts and structure the code took help of GPT Models. The final implementation, testing, and project setup were completed by "infoanupampal@gmail.com"
-</h5>
+---
+## This project was developed as part of my learning journey in Python automation and web monitoring. As a learning assistant to understand concepts and structure the code took help of GPT Models. The final implementation, testing, and project setup were completed by "infoanupampal@gmail.com"

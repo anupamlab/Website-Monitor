@@ -35,36 +35,14 @@ It can be used to monitor:
 6. The new content replaces the old content for future comparison.
 ---
 
-## BOT Output
+## Workflow / Output
+
+<img width="30%" align="left" alt="Github Image" src="./Workflow.png" />
+
 <img width="20%" align="center" alt="Github Image" src="./Bot_Output.jpg" />
 
-## Bot Workflow
-        ┌─────────────────────┐
-        │   Target Website        │
-        │  (BBC News / Jobs)      │
-        └──────────┬──────────┘
-                     │
-                     ▼
-        ┌─────────────────────┐
-        │  Python Monitor Bot     │
-        │  (Playwright Script).   │
-        └───────── ┬──────────┘
-                   │
-         Checks for page updates
-                   │
-                   ▼
-        ┌─────────────────────┐
-        │ Compare with Old        │
-        │ Saved Page Content      │
-        └──────────┬──────────┘
-                     │
-          If Change Detected
-                    │
-                    ▼
-        ┌─────────────────────┐
-        │      Bot Alert          │
-        │  Notification Sent      │
-        └─────────────────────┘
+
+---
 
 ## Example Use Case
 This bot can monitor pages like:

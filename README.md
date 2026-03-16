@@ -20,9 +20,13 @@ It can be used to monitor:
 * Supports monitoring dynamic websites using Playwright
 ---
 ## Tech Stack
-* **Python** – Main programming language used to build the bot
+
+```
+pip install playwright requests
+```
 * **Playwright** – Headless browser automation for loading dynamic webpages
 * **Requests** – Used for sending messages through the Bot API
+* **Python** – Main programming language used to build the bot
 * **Bot API** – Sends alert notifications
 * **GitHub Actions** – Automates the script execution on a schedule
 ---
